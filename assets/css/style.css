@@ -1,0 +1,242 @@
+*{
+	/*removes default padding and margins*/
+	margin: 0;
+	padding: 0px; 
+	box-sizing: border-box; /*to avoid overflow */
+}
+
+/* Use this protocol when using float*/
+.clear:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+ }
+
+main {
+	flex: 1 0 auto;
+}
+
+nav,
+
+.page-footer {
+	background-color: #616161;
+}
+
+.nav-wrapper > a > img {
+	height: 50px;
+	margin: 15% 25%;
+}
+
+#raniel {
+	width: 75%;
+}
+
+h3 {
+	font-family: 'Passion One', cursive;
+	color: #e0e0e0;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+h2 {
+	font-family: 'Passion One', cursive;
+}
+
+.caption {
+	color: #e0e0e0;
+}
+
+
+/*Back to Top*/
+#scroll {
+    position:fixed;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: #00796b;
+    text-indent:-9999px;
+    display:none;
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    border-radius:60px
+}
+#scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:#ffffff;
+}
+#scroll:hover {
+    background-color: #4db6ac;
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+}
+
+/*Skill Bar*/
+
+.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:#eee;
+	height:35px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
+}
+
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+	width:110px;
+	font-size:13px;
+	color:#ffffff;
+	background:#6adcfa;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 20px;
+	height:35px;
+	line-height:35px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+	height:35px;
+	width:0px;
+	background:#00796b;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:35px;
+	line-height:35px;
+	color:#ffffff;
+	color:rgba(0, 0, 0, 0.4);
+}
+
+#downLoadBtn {
+ 	width: 70%;
+ 	background-color: #00796b;
+ }
+
+ #ranielDownload{
+ 	margin-left: 35px!important;
+ }
+
+ .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+ 	color: #00796b;
+ 	font-weight: bolder;
+ }
+
+ .btn-floating i {
+ 	background-color: #00796b;
+ }
+
+ #page-two {
+ 	margin: 13%;
+ }
+
+ #page-three {
+ 	background-color: #f5f5f5; 
+ 	margin: 15%;
+ }
+
+
+
+@media only	screen and (min-width: 481px) and (max-width: 968px) {
+	#downLoadBtn {
+	 	width: 120%
+	}
+
+	 #ranielDownload{
+	 	margin-left: 9px!important;
+	}
+
+	#page-two {
+	    margin: 10%;
+	}
+
+	 #page-three {
+	    margin: 3%;
+	}
+}
+
+@media only	screen and (max-width: 480px) {
+	#raniel{
+		width: 100%;
+	}
+
+	.nav-wrapper > a > img {
+		height: 50px;
+		margin: 5% 10%;
+	}
+
+	#footerCol { 
+		margin: 15px;
+	}
+
+	 #downLoadBtn {
+	 	width: 50%
+	}
+
+	 #ranielDownload{
+	 	margin-left: 3px!important;
+	}
+
+	 #page-two {
+	    margin: 0%;
+	}
+
+	 #page-two {
+	    margin: 0%;
+	}
+
+	#page-three {
+	 	margin: 0%;
+	 }
+
+}
